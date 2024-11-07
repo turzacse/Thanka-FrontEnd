@@ -8,7 +8,9 @@ const Basic = () => {
         <div>
             <Navbar/>
 
-            <Outlet/>
+            <div className='bg-[#BBCCDB]'>
+                <Outlet/>
+            </div>
 
             <Footer/>
         </div>
