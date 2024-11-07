@@ -3,14 +3,14 @@ import img from './c.png'
 
 const ContactUs = () => {
   return (
-    <div className="py-10 px-4">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Contact Us</h2>
-      <div className="flex justify-between items-center">
+    <div className="py-10 ">
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-8 hidden md:block">Contact Us</h2>
+      <div className="flex md:flex-row flex-col justify-between items-center">
         <div className="w-1/2 flex justify-start">
-        <img src={img} alt="" className="w-[450px]" />
+        <img src={img} alt="" className="w-[450px] mb-10" />
         </div>
 
-        <form className="w-1/2 bg-gradient-to-r from-[#658BAE] to-[#123955] p-6 rounded-lg shadow-md">
+        <form className="md:w-1/2 w-full bg-gradient-to-r from-[#658BAE] to-[#123955] p-6 rounded-lg shadow-md">
         <div className="mb-4">
           <label className="block text-gray-100 font-semibold mb-2" htmlFor="name">Name</label>
           <input

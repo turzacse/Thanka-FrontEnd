@@ -24,10 +24,10 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-[#658BAE] to-[#123955] text-white py-16 px-4 sm:px-8 lg:px-16">
+    <div className="bg-gradient-to-r from-[#658BAE] to-[#123955] text-white py-16 px-4 sm:px-8 lg:px-16 rounded-lg">
       <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
-      <div className="flex justify-between">
-      <div className="w-1/2">
+      <div className="flex flex-col-reverse md:flex-row justify-between">
+      <div className="md:w-1/2">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b border-gray-300 py-4">
             <button
@@ -44,7 +44,7 @@ const FAQ = () => {
         ))}
       </div>
 
-      <div className="w-1/2 flex justify-end">
+      <div className="md:w-1/2 flex md:justify-end justify-center">
       <img className="rounded-full" src={img} alt="" />
       </div>
       </div>

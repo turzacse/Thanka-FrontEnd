@@ -31,7 +31,7 @@ const Featured = () => {
     return (
         <section className="bg-gradient-to-r from-[#658BAE] to-[#123955] py-8 pb-16 rounded-lg px-8">
         <h2 className="text-3xl font-bold text-center text-white mb-6">Featured Products</h2>
-        <div className='grid grid-cols-4 gap-4'>
+        <div className='grid md:grid-cols-4 grid-cols-1 gap-4'>
             {
                 products?.map((item, index) => <div className="bg-white p-4 rounded-lg shadow-md max-w-xs">
                 <img src={img} alt="Thanaka Face Pack" className="rounded-md mb-4 h-[200px] w-[250px] mx-auto" />
