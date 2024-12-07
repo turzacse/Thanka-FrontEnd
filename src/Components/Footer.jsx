@@ -3,17 +3,18 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-[#FDEFE1] text-black py-8">
       <div className="container mx-auto px-6 md:px-12">
         {/* Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Left side: Business name/logo and description */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-semibold mb-4 text-yellow-300">TFP</h3>
-            <p className="text-sm">
+          <img src="/logo.png" className="h-[100px] " alt="" />
+          <p className="text-yellow-800 font-bold text-4xl mb-3">Glow Craft</p>
+            {/* <p className="text-sm">
               Discover the benefits of natural skincare with our Thanaka Face Pack. Made with care, for healthy skin.
-            </p>
+            </p> */}
           </div>
           
           {/* Middle: Quick Links */}

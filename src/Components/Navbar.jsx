@@ -9,33 +9,33 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-[#658BAF] text-white">
+    <nav className="bg-[#FFFFFF] text-black">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Left side: Logo or Business Name */}
         <div className="text-2xl font-bold text-yellow-300">
-          <a href="/">TFP</a>
+          <img src="/logo.png" className="h-[60px] " alt="" />
         </div>
 
         {/* Middle: Routes (visible on large screens) */}
         <div className="hidden md:flex space-x-6">
-          <a href="/" className="hover:text-gray-200">
+          <a href="/" className="hover:text-gray-700">
             Home
           </a>
-          <a href="/about" className="hover:text-gray-200">
+          <a href="/about" className="hover:text-gray-700">
             About
           </a>
-          <a href="/products" className="hover:text-gray-200">
+          <a href="/products" className="hover:text-gray-700">
             Products
           </a>
-          <a href="/contact" className="hover:text-gray-200">
+          <a href="/contact" className="hover:text-gray-700">
             Contact
           </a>
         </div>
 
         {/* Right side: Login and Notification (visible on large screens) */}
         <div className="hidden md:flex space-x-6 items-center">
-          <button className="hover:text-gray-200">Login</button>
-          <FaBell className="text-xl hover:text-gray-200" />
+          <button className="hover:text-gray-700">Login</button>
+          <FaBell className="text-xl hover:text-gray-700" />
         </div>
 
         {/* Mobile Menu Icon */}

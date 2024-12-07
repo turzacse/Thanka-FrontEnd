@@ -9,22 +9,34 @@ import "./index.css";
 import Basic from './Layout/Basic.jsx';
 import Home from './Pages/Home/Home.jsx';
 import AboutUs from './Pages/About/About.jsx';
+import Thanaka from './Layout/Thanaka.jsx';
+import LandingPage from './Pages/Landing Page/LandingPage.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <Basic/>,
     children: [
       {
-        path: '/',
+        path: '/home',
         element: <Home/>
       },
       {
-        path: '/about',
+        path: '/home/about',
         element: <AboutUs/>
       }
     ]
   },
+  {
+    path: '/',
+    element: <Thanaka/>,
+    children: [
+      {
+        path: '/',
+        element: <LandingPage/>
+      }
+    ]
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
