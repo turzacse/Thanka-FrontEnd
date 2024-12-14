@@ -9,7 +9,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-[#FFFFFF] text-black">
+    <nav className="bg-[#e69f9f] text-black">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Left side: Logo or Business Name */}
         <div className="text-2xl font-bold text-yellow-300">

@@ -8,9 +8,9 @@ export default {
     extend: {
       fontFamily: {
         playfair: ['"Playfair Display"', 'serif'],
+        josefin: ['"Josefin Sans"', 'sans-serif'],
       },
     },
   },
   plugins: [],
 }
-
